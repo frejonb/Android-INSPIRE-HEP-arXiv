@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chochitos.inspirehep_citations.ArxivFeed">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/arxiv_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <ListView
+                android:id="@+id/arxiv_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|top" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/arxiv_progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorAccent"
+        android:indeterminateTintMode="src_in"
+        android:visibility="invisible" />
+
+
+</android.support.design.widget.CoordinatorLayout>

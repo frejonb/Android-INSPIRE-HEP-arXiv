@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="inspireAuthor"
+        android:summary="Track citations"
+        android:title="Inspire Author"></EditTextPreference>
+
+
+    <EditTextPreference
+        android:key="arxivTag"
+        android:summary="Tag to follow"
+        android:title="ArXiv Tag"></EditTextPreference>
+    <EditTextPreference
+        android:key="arxivKeywords"
+        android:summary="Comma separated, no spaces"
+        android:title="ArXiv Keywords"></EditTextPreference>
+    <SwitchPreference
+        android:key="filterArxivKeywords"
+        android:title="Filter ArXiv Keywords?"></SwitchPreference>
+</PreferenceScreen>
