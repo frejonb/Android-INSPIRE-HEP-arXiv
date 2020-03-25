@@ -25,7 +25,7 @@ interface InspireHEPApiService {
             val retrofit = Retrofit.Builder()
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create())
-                    .baseUrl("http://inspirehep.net/")
+                    .baseUrl("http://old.inspirehep.net/")
                     .build()
 
             return retrofit.create(InspireHEPApiService::class.java)
